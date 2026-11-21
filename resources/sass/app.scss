@@ -1,0 +1,231 @@
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Bootstrap Icons
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+:root {
+    --jco-brown: #3e2723;
+    --jco-orange: #f57c00;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.jco-line {
+    border: 0;
+    border-top: 1px solid #f59e0b;
+    opacity: 1;
+}
+
+/* navbar */
+.jco-logo {
+    height: 75px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #333333;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--jco-orange);
+}
+
+/* hero */
+.hero-frame {
+    height: 420px;
+    background-color: #f8f9fa;
+}
+
+.hero-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 768px) {
+    .hero-frame {
+        height: 220px;
+    }
+}
+
+/* explore menu */
+.jco-tagline-text {
+    color: #333333;
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1.65;
+    letter-spacing: 0.2px;
+}
+
+.jco-btn-explore {
+    color: #e67e22;
+    border: 1px solid #f3cba5;
+    background-color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    padding: 13px 28px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+}
+
+.jco-btn-explore:hover {
+    background-color: var(--jco-orange);
+    border-color: var(--jco-orange);
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .jco-tagline-text {
+        font-size: 1.1rem;
+    }
+}
+
+/* section tengah */
+.jco-mid-banner {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .jco-mid-banner {
+        height: 260px;
+    }
+}
+
+/* partner & location */
+.jco-feature-img-box {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+
+.jco-feature-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.jco-feature-card:hover .jco-feature-img-box img {
+    transform: scale(1.04);
+}
+
+.jco-feature-title {
+    color: var(--jco-brown);
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.jco-feature-arrow {
+    color: #555555;
+    font-size: 0.9rem;
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.jco-feature-card:hover .jco-feature-arrow {
+    transform: translateX(5px);
+    color: var(--jco-orange);
+}
+
+.jco-feature-desc {
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+/* footer */
+.jco-footer {
+    background-color: #f4f4f4;
+    color: #333333;
+    font-size: 0.78rem;
+    letter-spacing: 0.5px;
+}
+
+.jco-footer-links a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.jco-footer-links a:hover {
+    color: var(--jco-orange);
+}
+
+.jco-footer-heading {
+    color: #333333;
+    font-weight: 600;
+    font-size: 0.78rem;
+}
+
+.jco-social a {
+    color: #222222;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.jco-social a:hover {
+    color: var(--jco-orange);
+}
+
+.flag-id {
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    background: linear-gradient(to bottom, #ce1126 50%, #ffffff 50%);
+    border: 1px solid #dddddd;
+}
+
+.jco-region-text {
+    color: #777777;
+    font-size: 0.75rem;
+}
+
+.jco-lang a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+.jco-lang a.active {
+    color: #222222;
+}
+
+.jco-copyright {
+    font-size: 0.75rem;
+    color: #555555;
+    line-height: 1.6;
+}
+
+.jco-copyright a {
+    color: #555555;
+    text-decoration: none;
+}
+
+.jco-copyright a:hover {
+    text-decoration: underline;
+    color: var(--jco-orange);
+}
